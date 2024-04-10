@@ -1,0 +1,242 @@
+/*variables 
+var message = "Hello World";
+
+console.log(message);
+
+let age = 20;
+
+console.log(age);
+
+const Pi = 3.14;
+
+console.log(Pi);
+
+let person = {
+    name: "dagul",
+    age: 21, 
+};
+
+console.log(person["name"], person["age"]);
+
+
+let fruits = ["apple", "orange", "Durian"];
+
+console.log(fruits[2]);
+
+let add = function (a, b){
+    return a + b; 
+};
+console.log(add(2, 2));
+
+//operators in javascript
+
+//arithmetic operator
+let x = 1;
+let y = 2;
+
+console.log(x + y);
+//comparison orperator
+let word = "Math";
+let isEqual = y > x;
+let isGreater = x == y;
+
+console.log(isGreater); 
+
+//logical operator
+console.log(x > 10 && y < 11);
+console.log(x > 10 || y < 11);
+*/
+/*Ternary operator 
+let isHot = false;
+let condition = isHot ? "its very hot." : "No, its not hot";
+console.log(condition);
+
+let grade = 70;
+let mark = "";
+
+if(grade >= 90){
+    mark = "A";
+}
+if(grade >= 80){
+    mark = "B";
+}
+if(grade >= 70){
+    mark = "C";
+}
+else{
+    mark = "F";
+}
+//nested if else statement 
+const finalMark = grade >= 90 ? "A" : grade >= 80 ? "B" : grade >= 70 ? "C" : "F"; 
+console.log(mark);
+console.log(finalMark);
+
+/*Destruturing
+const objects = ["table", "phone", "apple", "test", "1"];
+const [furniture, phone, fruits, test, age] = objects;
+
+console.log(furniture, phone, fruits, test, age);
+*/
+//Destructuring
+/*
+const person = {
+    name: "bulilit",
+    age: 5,
+    birthdate: new Date(),
+    status: "Single",
+};
+const {name, age, birthdate, status} = person;
+
+console.log(name, age, birthdate, status);
+*/
+
+/*spread operator
+
+const body = ["Head", "Knees"];
+const completeBody = [...body, "Toes", "Sholder"];
+
+const person = {
+    name: "Colleen Kahulugan",
+    staffName: "precy gaspar",
+    age: "**",
+};
+
+const contactPerson = {
+    contactNumber: "09********",
+    ...person,
+};
+
+console.log(contactPerson);
+
+const number = [1, 2, 3];
+
+function sum(a, b, c){
+    return a + b + c;
+}
+console.log(sum(...number));
+*/
+
+//array Method
+
+
+
+/*let salad = ["Macaroni", "Nesle Cream", "Condensed Milk", "Cheese"];
+(1) push - inserts an element into an array 
+salad.push("bulilit");
+console.log(salad);*/
+
+/*(2) pop - the easiest way to remove a single element from an array
+salad.pop();
+console.log(salad);
+*/
+
+//let months = ["Jan", "March", "April", "June"];
+
+/*(3) splice - method changes the contents of an array by removing or replacing
+excisting element and/or adding new element in place
+
+months.splice(1, 0, "Feb");
+console.log(months);
+months.splice(4, 1, "May")
+console.log(months);*/
+
+/*(4) includes - method determines whether an array includes a certain value among its entries
+returing, true or falase as appriate.
+
+console.log(months.includes("Jan"));*/
+
+/*(5) slice - the slice() method returns a shallow copy of a portion of an array
+into a new array object selected from start to end */
+
+//console.log(months.slice(1, 3));
+
+/*array iterators
+let students = [
+    {
+        id: 1,
+        f_name: "alex",
+        l_name: "B",
+        gender: "M",
+        married: false,
+        age: 22,
+        paid: 250,
+        course: ["Javascript", "React"],
+    },
+    {
+        id: 2,
+        f_name: "Bulilit",
+        l_name: "B",
+        gender: "F",
+        married: false,
+        age: 23,
+        paid: 450,
+        course: ["Javascript", "React"],
+    },
+    {
+        id: 3,
+        f_name: "Dagul",
+        l_name: "D",
+        gender: "M",
+        merried: false,
+        age: 26,
+        paid: 290,
+        course: ["Javascript", "React"],
+    }   
+]; 
+/*map()
+const newStudent = students.map((student, index) => {
+    return student;
+});
+console.log(newStudent);
+*/
+
+/*filter()
+const newStudent = students.filter((students, index) => students.age > 25);
+    console.log(newStudent);
+*/
+
+/*some()
+let = hasStudentLow30 = students.some((students, index) => students.age < 20);
+console.log(hasStudentLow30)*/
+
+/*find()
+let studentAbove30 = students.find((student, _index) => student.age < 25);
+console.log(studentAbove30);
+*/
+
+/*reduce()
+let totalCost = students.reduce((accumulator, student, currentIndex, students) => {
+    accumulator = accumulator + student.paid;
+    return accumulator;
+},
+0
+);
+console.log(totalCost);
+*/
+
+/*promises 
+let promise = new Promise((resolve, reject) => {
+const i = "Promise";
+i === "Promisesss" ? resolve() : reject();
+});
+promise.then(() => console.log("promise was resolved")).catch(() => console.log("Promise was rejected"));
+*/
+
+/*Fetch api
+import fetch from "node-fetch";
+const url = "https://jsonplaceholder.typicode.com/todos/1";
+
+//const fetchPromise = fetch(url);
+//fetchPromise.then((response) => response.json()).then(response => console.log(response)); 
+
+const fetchPromise = async() => {
+    const res = await fetch(url);
+    const response = await res.json();
+    console.log(response);
+};
+fetchPromise();*/
+
+/*module 
+import Message from "./person.js";
+
+console.log(Message());*/
